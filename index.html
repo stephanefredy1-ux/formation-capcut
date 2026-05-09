@@ -1,405 +1,747 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SEO OPTIMISATION -->
+<title>MASTER ACADEMY CAPCUT - Formation Complète</title>
 
-<title>Formation CapCut Complète | Apprendre Le Montage Vidéo Professionnel</title>
-
-<meta name="description" content="Formation complète CapCut de débutant à expert. Apprenez le montage vidéo professionnel, les effets, l’IA, TikTok, Reels, YouTube Shorts et la monétisation.">
+<meta name="description" content="Formation professionnelle complète CapCut. Apprenez le montage vidéo, TikTok, Reels, Shorts, effets, IA, color grading et monétisation.">
 
 <meta name="keywords" content="
 CapCut,
 Formation CapCut,
-Cours CapCut,
-Apprendre CapCut,
-Montage vidéo,
-Montage TikTok,
-Montage Reels,
-Montage YouTube Shorts,
-Formation montage vidéo,
-CapCut Expert,
-CapCut Mobile,
-CapCut PC,
-Tutoriel CapCut,
-Video Editing,
-Freelance montage vidéo
+Cours montage vidéo,
+TikTok editing,
+Instagram Reels,
+YouTube Shorts,
+Formation vidéo,
+Montage professionnel,
+CapCut IA,
+Color grading,
+Audio editing,
+Effets vidéo,
+Freelance montage
 ">
-
-<meta name="author" content="FREDY STEPHANE">
-
-<meta property="og:title" content="Formation Master CapCut">
-<meta property="og:description" content="Formation complète pour devenir expert en montage vidéo avec CapCut.">
-<meta property="og:type" content="website">
-
-<link rel="canonical" href="https://formation-capcut.com">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#0f0f0f;
-    color:white;
-    font-family:Arial, sans-serif;
-    line-height:1.8;
+font-family:Arial,sans-serif;
+background:#0b0b0b;
+color:white;
+line-height:1.7;
 }
 
 header{
-    background:linear-gradient(90deg,#000,#1a1a1a);
-    padding:60px 30px;
-    text-align:center;
-    border-bottom:2px solid #222;
+background:linear-gradient(90deg,#000,#111,#1a1a1a);
+padding:60px 20px;
+text-align:center;
 }
 
 header h1{
-    font-size:55px;
-    color:#00ffcc;
+font-size:55px;
+color:#00ffd5;
+margin-bottom:20px;
 }
 
 header p{
-    color:#bbb;
-    margin-top:15px;
-    font-size:20px;
+font-size:20px;
+color:#ccc;
 }
 
 nav{
-    background:#121212;
-    padding:15px;
-    text-align:center;
-    position:sticky;
-    top:0;
+background:#111;
+padding:15px;
+display:flex;
+justify-content:center;
+gap:25px;
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid #222;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
 }
 
-section{
-    padding:50px 30px;
-    border-bottom:1px solid #222;
+nav a:hover{
+color:#00ffd5;
 }
 
-h2{
-    color:#00ffcc;
-    margin-bottom:20px;
-    font-size:40px;
+.hero{
+padding:100px 20px;
+text-align:center;
+background:url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200') center/cover;
 }
 
-h3{
-    color:#ffd700;
-    margin-bottom:15px;
+.hero h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+max-width:800px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:18px 35px;
+background:#00ffd5;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:12px;
+font-size:18px;
+}
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section h2{
+font-size:40px;
+margin-bottom:40px;
+color:#00ffd5;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-    background:#1b1b1b;
-    padding:30px;
-    border-radius:15px;
-    margin-top:25px;
+background:#151515;
+padding:25px;
+border-radius:15px;
+border:1px solid #222;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#00ffd5;
+}
+
+.module{
+background:#151515;
+padding:30px;
+margin-bottom:35px;
+border-radius:15px;
+border-left:5px solid #00ffd5;
+}
+
+.module h3{
+font-size:30px;
+margin-bottom:20px;
+color:#00ffd5;
 }
 
 .lesson{
-    background:#161616;
-    padding:25px;
-    margin-top:25px;
-    border-left:5px solid #00ffcc;
-    border-radius:10px;
+background:#1f1f1f;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+}
+
+.lesson h4{
+margin-bottom:10px;
+color:#00ffd5;
 }
 
 .exercise{
-    background:#252525;
-    padding:25px;
-    margin-top:25px;
-    border-left:5px solid orange;
-    border-radius:10px;
+background:#111;
+padding:20px;
+margin-top:15px;
+border:1px solid #333;
+border-radius:10px;
 }
 
-.homework{
-    background:#2f2f2f;
-    padding:25px;
-    margin-top:25px;
-    border-left:5px solid red;
-    border-radius:10px;
-}
-
-.tip{
-    background:#0b3b3b;
-    padding:25px;
-    margin-top:25px;
-    border-radius:10px;
-}
-
-ul{
-    padding-left:20px;
+.exercise h5{
+color:#00ffd5;
+margin-bottom:10px;
 }
 
 footer{
-    background:#000;
-    padding:50px 30px;
-    text-align:center;
+background:#000;
+padding:40px;
+text-align:center;
+margin-top:50px;
+border-top:1px solid #222;
 }
 
-.contact-box{
-    background:#181818;
-    padding:30px;
-    border-radius:15px;
-    margin-top:20px;
-}
-
-.legal{
-    color:#888;
-    margin-top:25px;
-    font-size:14px;
+.contact{
+background:#151515;
+padding:30px;
+border-radius:15px;
+text-align:center;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
 
-<h1>FORMATION MASTER CAPCUT</h1>
+<h1>MASTER ACADEMY CAPCUT</h1>
 
 <p>
-Formation complète pour devenir expert en montage vidéo mobile et PC
-avec CapCut.
+Formation Ultra Professionnelle CapCut
+De Débutant à Expert
 </p>
 
 </header>
 
 <nav>
 
-<a href="#formation">Formation</a>
+<a href="#presentation">Présentation</a>
 <a href="#modules">Modules</a>
 <a href="#contact">Contact</a>
-<a href="#mentions">Mentions légales</a>
 
 </nav>
 
-<!-- INTRO -->
+<section class="hero">
 
-<section id="formation">
-
-<h2>FORMATION CAPCUT COMPLÈTE</h2>
-
-<div class="card">
+<h2>
+DEVENEZ EXPERT EN MONTAGE VIDÉO
+</h2>
 
 <p>
-
-Cette formation professionnelle CapCut a été conçue pour permettre
-à toute personne de maîtriser le montage vidéo moderne.
-
-Vous apprendrez :
-
+Apprenez le montage TikTok, Instagram Reels,
+YouTube Shorts, les effets professionnels,
+les outils IA et la monétisation.
 </p>
 
-<ul>
+<a class="btn" href="#modules">
+COMMENCER LA FORMATION
+</a>
 
-<li>Le montage vidéo professionnel</li>
-<li>Les effets visuels avancés</li>
-<li>Le sound design</li>
-<li>Le color grading</li>
-<li>Les outils IA de CapCut</li>
-<li>Le montage TikTok/Reels/Shorts</li>
-<li>Les techniques virales</li>
-<li>La monétisation du montage vidéo</li>
+</section>
 
-</ul>
+<section class="section" id="presentation">
+
+<h2>Pourquoi cette formation ?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Formation Complète</h3>
+<p>
+Cours détaillés étape par étape avec exercices pratiques.
+</p>
+</div>
+
+<div class="card">
+<h3>Approche Professionnelle</h3>
+<p>
+Apprenez les techniques des vrais monteurs professionnels.
+</p>
+</div>
+
+<div class="card">
+<h3>Monétisation</h3>
+<p>
+Découvrez comment gagner de l’argent avec CapCut.
+</p>
+</div>
 
 </div>
 
 </section>
 
-<!-- MODULES -->
-
-<section id="modules">
+<section class="section" id="modules">
 
 <h2>PROGRAMME COMPLET</h2>
 
-<div class="card">
+<!-- MODULE 1 -->
 
-<h3>MODULES DISPONIBLES</h3>
+<div class="module">
 
-<ul>
+<h3>MODULE 1 — INTRODUCTION À CAPCUT</h3>
 
-<li>Introduction à CapCut</li>
-<li>Découverte de l’interface</li>
-<li>Montage vidéo professionnel</li>
-<li>Transitions et animations</li>
-<li>Texte et sous-titres IA</li>
-<li>Audio et sound design</li>
-<li>Color grading</li>
-<li>Effets cinématiques</li>
-<li>Outils IA avancés</li>
-<li>Montage TikTok et Reels</li>
-<li>YouTube Shorts</li>
-<li>Storytelling viral</li>
-<li>Monétisation</li>
-<li>Création d’agence</li>
+<div class="lesson">
 
-</ul>
+<h4>LEÇON 1 — Découverte de l’interface</h4>
+
+<p>
+- Présentation de l’interface CapCut<br>
+- Timeline<br>
+- Pistes vidéo<br>
+- Outils principaux<br>
+- Importation des médias
+</p>
+
+<div class="exercise">
+
+<h5>EXERCICE</h5>
+
+<p>
+Créer un nouveau projet et importer :
+<br><br>
+- 3 vidéos<br>
+- 2 images<br>
+- 1 musique
+</p>
+
+</div>
 
 </div>
 
 <div class="lesson">
 
-<h3>LEÇON — Création de contenu viral</h3>
+<h4>LEÇON 2 — Paramètres vidéo</h4>
 
 <p>
-
-Comprendre les hooks, la rétention et les techniques
-de vidéos virales utilisées sur TikTok, Instagram Reels
-et YouTube Shorts.
-
+- Résolution vidéo<br>
+- FPS<br>
+- Ratio TikTok/Reels/YouTube
 </p>
-
-</div>
 
 <div class="exercise">
 
-<h3>EXERCICE PRATIQUE</h3>
+<h5>TRAVAIL PRATIQUE</h5>
 
 <p>
-
-Créer une vidéo TikTok de 30 secondes avec :
+Créer :
+<br><br>
+- une vidéo TikTok 9:16<br>
+- une vidéo YouTube 16:9
 </p>
-
-<ul>
-
-<li>Hook dynamique</li>
-<li>Sous-titres automatiques</li>
-<li>Transitions rapides</li>
-<li>Sound design</li>
-
-</ul>
 
 </div>
 
-<div class="homework">
+</div>
 
-<h3>MISSION</h3>
+</div>
+
+<!-- MODULE 2 -->
+
+<div class="module">
+
+<h3>MODULE 2 — MONTAGE VIDÉO PROFESSIONNEL</h3>
+
+<div class="lesson">
+
+<h4>LEÇON 1 — Découpage Vidéo</h4>
 
 <p>
-
-Créer un portfolio professionnel contenant :
+- Split<br>
+- Suppression<br>
+- Découpage précis<br>
+- Synchronisation
 </p>
 
-<ul>
+<div class="exercise">
 
-<li>1 publicité produit</li>
-<li>1 Reel Instagram</li>
-<li>1 TikTok viral</li>
-<li>1 YouTube Short</li>
+<h5>EXERCICE</h5>
 
-</ul>
+<p>
+Créer un montage dynamique de 30 secondes.
+</p>
+
+</div>
+
+</div>
+
+<div class="lesson">
+
+<h4>LEÇON 2 — Transitions</h4>
+
+<p>
+- Transitions fluides<br>
+- Zoom<br>
+- Flash<br>
+- Motion blur
+</p>
+
+<div class="exercise">
+
+<h5>TRAVAIL PRATIQUE</h5>
+
+<p>
+Créer une transition cinématique entre deux scènes.
+</p>
+
+</div>
+
+</div>
+
+<div class="lesson">
+
+<h4>LEÇON 3 — Vitesse Vidéo</h4>
+
+<p>
+- Slow motion<br>
+- Speed ramping<br>
+- Velocity editing
+</p>
+
+<div class="exercise">
+
+<h5>EXERCICE</h5>
+
+<p>
+Créer un effet slow motion cinématique.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MODULE 3 -->
+
+<div class="module">
+
+<h3>MODULE 3 — TEXTE ET SOUS-TITRES IA</h3>
+
+<div class="lesson">
+
+<h4>LEÇON 1 — Texte Professionnel</h4>
+
+<p>
+- Animations texte<br>
+- Typographie<br>
+- Hiérarchie visuelle
+</p>
+
+<div class="exercise">
+
+<h5>EXERCICE</h5>
+
+<p>
+Créer une intro TikTok avec texte animé.
+</p>
+
+</div>
+
+</div>
+
+<div class="lesson">
+
+<h4>LEÇON 2 — Sous-Titres Automatiques</h4>
+
+<p>
+- Auto captions<br>
+- Synchronisation IA<br>
+- Personnalisation
+</p>
+
+<div class="exercise">
+
+<h5>TRAVAIL PRATIQUE</h5>
+
+<p>
+Créer des sous-titres dynamiques sur une vidéo.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MODULE 4 -->
+
+<div class="module">
+
+<h3>MODULE 4 — AUDIO PROFESSIONNEL</h3>
+
+<div class="lesson">
+
+<h4>LEÇON 1 — Nettoyage Audio</h4>
+
+<p>
+- Réduction du bruit<br>
+- Voice enhance<br>
+- Égalisation
+</p>
+
+<div class="exercise">
+
+<h5>EXERCICE</h5>
+
+<p>
+Améliorer un audio avec bruit de fond.
+</p>
+
+</div>
+
+</div>
+
+<div class="lesson">
+
+<h4>LEÇON 2 — Sound Design</h4>
+
+<p>
+- Effets sonores<br>
+- Impact sounds<br>
+- Ambiance sonore
+</p>
+
+<div class="exercise">
+
+<h5>TRAVAIL PRATIQUE</h5>
+
+<p>
+Créer une scène d’action avec sound design.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MODULE 5 -->
+
+<div class="module">
+
+<h3>MODULE 5 — COLOR GRADING</h3>
+
+<div class="lesson">
+
+<h4>LEÇON 1 — Correction Couleur</h4>
+
+<p>
+- Luminosité<br>
+- Contraste<br>
+- Saturation
+</p>
+
+<div class="exercise">
+
+<h5>EXERCICE</h5>
+
+<p>
+Transformer une vidéo fade en rendu professionnel.
+</p>
+
+</div>
+
+</div>
+
+<div class="lesson">
+
+<h4>LEÇON 2 — Look Cinéma</h4>
+
+<p>
+- LUTs<br>
+- Teal & Orange<br>
+- Effet cinéma
+</p>
+
+<div class="exercise">
+
+<h5>TRAVAIL PRATIQUE</h5>
+
+<p>
+Créer un look Netflix.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MODULE 6 -->
+
+<div class="module">
+
+<h3>MODULE 6 — OUTILS IA</h3>
+
+<div class="lesson">
+
+<h4>LEÇON 1 — Suppression arrière-plan</h4>
+
+<p>
+- AI cutout<br>
+- Fond vert<br>
+- Détourage automatique
+</p>
+
+<div class="exercise">
+
+<h5>EXERCICE</h5>
+
+<p>
+Remplacer un arrière-plan par une image cinéma.
+</p>
+
+</div>
+
+</div>
+
+<div class="lesson">
+
+<h4>LEÇON 2 — AI Voice</h4>
+
+<p>
+- Voix IA<br>
+- Narration automatique<br>
+- Voix TikTok
+</p>
+
+<div class="exercise">
+
+<h5>TRAVAIL PRATIQUE</h5>
+
+<p>
+Créer une vidéo narration IA.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MODULE 7 -->
+
+<div class="module">
+
+<h3>MODULE 7 — TIKTOK / REELS / SHORTS</h3>
+
+<div class="lesson">
+
+<h4>LEÇON 1 — Vidéos Virales</h4>
+
+<p>
+- Hook<br>
+- Rétention<br>
+- Storytelling
+</p>
+
+<div class="exercise">
+
+<h5>EXERCICE</h5>
+
+<p>
+Créer une vidéo virale de 20 secondes.
+</p>
+
+</div>
+
+</div>
+
+<div class="lesson">
+
+<h4>LEÇON 2 — Algorithmes</h4>
+
+<p>
+- Temps de rétention<br>
+- Watch time<br>
+- Engagement
+</p>
+
+<div class="exercise">
+
+<h5>TRAVAIL PRATIQUE</h5>
+
+<p>
+Analyser 5 vidéos virales TikTok.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MODULE 8 -->
+
+<div class="module">
+
+<h3>MODULE 8 — MONÉTISATION</h3>
+
+<div class="lesson">
+
+<h4>LEÇON 1 — Trouver des clients</h4>
+
+<p>
+- Fiverr<br>
+- Upwork<br>
+- Instagram<br>
+- TikTok
+</p>
+
+<div class="exercise">
+
+<h5>EXERCICE</h5>
+
+<p>
+Créer un portfolio de monteur vidéo.
+</p>
+
+</div>
+
+</div>
+
+<div class="lesson">
+
+<h4>LEÇON 2 — Créer une agence</h4>
+
+<p>
+- Organisation<br>
+- Tarification<br>
+- Acquisition clients
+</p>
+
+<div class="exercise">
+
+<h5>TRAVAIL FINAL</h5>
+
+<p>
+Créer :
+<br><br>
+- un portfolio<br>
+- une offre de service<br>
+- une vidéo publicitaire
+</p>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- CONTACT -->
-
-<section id="contact">
+<section class="section" id="contact">
 
 <h2>CONTACT</h2>
 
-<div class="contact-box">
-
-<h3>Promoteur</h3>
-
-<p>FREDY STEPHANE</p>
-
-<br>
-
-<h3>Numéros de contact</h3>
-
-<p>📞 655885646</p>
-
-<p>📞 679475154</p>
-
-<br>
-
-<h3>Disponibilité</h3>
+<div class="contact">
 
 <p>
-Disponible pour :
-</p>
-
-<ul>
-
-<li>Coaching CapCut</li>
-<li>Formation montage vidéo</li>
-<li>Accompagnement créateurs</li>
-<li>Services de montage professionnel</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<!-- MENTIONS LEGALES -->
-
-<section id="mentions">
-
-<h2>MENTIONS LÉGALES</h2>
-
-<div class="card">
-
-<p>
-
-Nom du promoteur :
-<strong>FREDY STEPHANE</strong>
-
+<strong>Promoteur :</strong>
+FREDY STEPHANE
 </p>
 
 <br>
 
 <p>
-
-Cette plateforme de formation a pour objectif
-l’apprentissage du montage vidéo avec CapCut.
-
-</p>
-
-<br>
-
-<p>
-
-Les contenus, vidéos, textes, ressources et supports
-de formation sont protégés et réservés à un usage éducatif.
-
-</p>
-
-<br>
-
-<p>
-
-Toute reproduction, modification ou redistribution
-sans autorisation préalable est interdite.
-
-</p>
-
-<br>
-
-<p>
-
-Les résultats obtenus après la formation dépendent
-du travail personnel et de l’implication de chaque apprenant.
-
+<strong>Téléphone :</strong>
+655885646 / 679475154
 </p>
 
 </div>
@@ -409,22 +751,12 @@ du travail personnel et de l’implication de chaque apprenant.
 <footer>
 
 <p>
-
-© 2026 — FORMATION MASTER CAPCUT — FREDY STEPHANE
-
+© 2026 MASTER ACADEMY CAPCUT
 </p>
-
-<div class="legal">
 
 <p>
-
-Formation optimisée SEO pour :
-CapCut, montage vidéo, TikTok, Reels, YouTube Shorts,
-formation vidéo professionnelle.
-
+Tous droits réservés — FREDY STEPHANE
 </p>
-
-</div>
 
 </footer>
 
